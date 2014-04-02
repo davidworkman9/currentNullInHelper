@@ -1,0 +1,22 @@
+<head>
+  <title>currentNullInHelper</title>
+</head>
+
+<body></body>
+
+
+<template name="header">
+	{{currentTemplate}}
+</template>
+
+<template name="layout">
+	{{> header}}
+	<!-- {{> yield region="header"}} -->
+	{{> yield}}	
+</template>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  <input type="button" value="Click" />
+</template>
